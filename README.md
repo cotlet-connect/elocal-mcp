@@ -102,6 +102,60 @@ python3 elocal_agent.py tools     # list Cotlet.dev tools
 python3 elocal_agent.py serve     # start the stdio MCP server (same as no argument)
 ```
 
+## What you can ask your AI to do in eLocal
+
+These are real jobs eLocal users asked about. Cotlet lets ChatGPT, Claude or any MCP client do them in your own signed-in eLocal account.
+
+### Calls and leads
+
+#### Can AI make sure I answer every eLocal lead and call back the ones I missed?
+
+Partly. Cotlet does not place calls itself. With Cotlet, ChatGPT or Claude reads yesterday's calls and web leads in your signed-in eLocal Advertiser Portal, lists the ones nobody answered and drafts a callback note for each. Nothing is sent until you say yes.
+
+Ask your agent: "List yesterday's eLocal calls and web leads that nobody answered and draft a callback note for each. Send nothing yet."
+
+As an API endpoint: Yes. Save the missed lead list as an endpoint in Cotlet and call it every morning from n8n, Make or Zapier to send it to whoever calls back.
+
+#### Can AI find eLocal calls to dispute?
+
+Partly. eLocal's help centre lets you dispute calls that do not qualify. With Cotlet, your agent reads this week's calls in your signed-in Advertiser Portal and lists the ones under 30 seconds, for the wrong service or outside your area. The dispute itself stays with you.
+
+Ask your agent: "Find calls under 30 seconds, wrong service or outside my area this week in eLocal and list them for a dispute with the reason for each."
+
+As an API endpoint: Yes. Save the call check as an endpoint in Cotlet and call it every Monday from n8n, Make or Zapier to get the list by email.
+
+#### How do I get my eLocal leads into my CRM automatically?
+
+Yes. eLocal has no Zapier, Make or n8n app. With Cotlet, your agent reads this week's calls and web leads in your signed-in Advertiser Portal and adds each one to your CRM with name, phone and service, both signed in in your Cloud Browser. Nothing is added until you say yes.
+
+Ask your agent: "Add this week's eLocal leads with name, phone and service to my CRM. Show me the list before you add anyone."
+
+As an API endpoint: Yes. Save the lead read as an endpoint in Cotlet that returns name, phone and service, and call it every hour from n8n, Make or Zapier to push leads into your CRM.
+
+### Spend and budget
+
+#### What did each of my eLocal campaigns cost this month, and what did one booked job cost?
+
+Yes. With Cotlet, ChatGPT or Claude reads the Results screen in your signed-in eLocal Advertiser Portal and gives you spend and calls for each campaign. Add your booked jobs from a sheet and it works out the cost of one job. Nothing changes in eLocal.
+
+Ask your agent: "What did each eLocal campaign cost this month, and what did one booked job cost? Use my booked jobs from this sheet."
+
+As an API endpoint: Yes. Save the results read as an endpoint in Cotlet and call it on the first of each month from n8n, Make or Zapier to get the cost table.
+
+#### How much of this week's eLocal budget is left, and which campaign will run out first?
+
+Yes. With Cotlet, your agent reads the Budget screen and this week's spend by campaign in your signed-in Advertiser Portal, then tells you what is left and which campaign runs out first at the current pace. Nothing changes in eLocal.
+
+Ask your agent: "How much of this week's eLocal budget is left, and which campaign will run out first at the current pace?"
+
+As an API endpoint: Yes. Save the budget read as an endpoint in Cotlet and call it every morning from n8n, Make or Zapier to post the number to Slack or email.
+
+#### Can ChatGPT or Claude pause my eLocal campaigns when my week is full?
+
+Yes. With Cotlet, your agent opens Campaigns in your signed-in Advertiser Portal, shows which campaigns it would pause and until when, then pauses them. You turn them back on in the portal, and calls in between are not sent. Nothing changes until you say yes.
+
+Ask your agent: "Pause my eLocal campaigns until Monday because my crews are booked. Show me which campaigns and wait for my OK."
+
 ## Questions from eLocal users
 
 **Does eLocal have an API?**
